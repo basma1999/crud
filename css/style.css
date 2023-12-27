@@ -1,0 +1,52 @@
+body{
+    background-color:#F7ECDE;
+}
+.container{
+    width: 90%;
+    
+}
+
+.head{
+    border-bottom:2px black dotted;
+
+}
+ h1{
+    font-size: 50px;
+    font-family:'Pacifico', cursive;
+    color: #352e28;
+    position: relative;
+    
+    margin: auto;
+ 
+}
+
+.container h2{
+    font-family:'Righteous', sans-serif;
+    background-image: linear-gradient(to right, #5fe387, #cec239);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btns{
+    border-bottom: 1px black dotted;
+}
+
+#box{
+    background-color: #0000006b;
+}
+#box span{
+    width: 20px;
+    height: 20px;
+}
+span.one{
+    background-color: #F15F5D;
+}
+span.two{
+    background-color:#FEBE2E;
+}
+span.three{
+    background-color:#4DB748;
+}
+
+ol li i{
+    color: #BB4120;
+}

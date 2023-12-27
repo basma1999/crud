@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    
+        <div class="container m-auto">
+            <h1 class="head pb-5 my-5 text-center">Bookmarker</h1>
+           
+            <h2 class="text-center"><i class=" mx-2 fa-solid fa-bookmark"></i>Bookmark your Favorite Sites<i class=" mx-2 fa-solid fa-bookmark"></i></h2>
+
+            <div class="crud-div">
+                <div >
+                <i class=" fa-solid fa-book-bookmark pe-2"></i><label class="my-4 fw-bold fs-5" for="siteNameInput">Site Name</label>
+                <input type="text" class="form-control" id="siteNameInput" placeholder="Bookmark Name">
+                </div>
+                <div >
+                <i class="fa-solid fa-link pe-2"></i><label class="my-4 fw-bold fs-5" for="SiteUrlInput">Site URL</label>
+                <input type="text" class="form-control" id="siteUrlInput" placeholder="Website URL">
+                </div>
+                <div class="btns d-flex justify-content-center align-items-center mt-2">
+                <button  onclick="addSite()" class="btn btn-danger my-5 btn-group-lg px-5">submit</button>
+                </div>
+                <table class="table my-3 text-center">
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                       
+                    </tbody>
+
+
+
+                </table>
+
+
+             <div id="box" class="d-none box-info position-absolute start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                <div class="box-caption bg-white p-4 rounded-2">
+                    <div class="box-head w-100 d-flex justify-content-between align-items-center mb-4">
+                        <div class="circles d-flex">
+                            <span class="one rounded-circle me-1"></span>
+                            <span class="two  rounded-circle me-1"></span>
+                            <span class="three rounded-circle me-1"></span>
+                          </div>
+                          <button onclick="closeAleret()" class="btn" id="closeBtn">
+                            <i class="fa-solid fa-xmark close fs-3"></i>
+                          </button>
+                    </div>
+                    <p class="m-0 pb-2">
+                        Site Name or Url is not valid, Please follow the rules below :
+                      </p>
+                          <ol class="rule list-unstyled m-0">
+                            <li>
+                              <i class="fa-regular fa-circle-right p-2"></i>Site name must
+                              contain at least 3 characters
+                            </li>
+                            <li>
+                              <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+                              valid one
+                            </li>
+                          </ol>
+                        
+                         
+                          
+                          
+                        
+                          
+
+                    </header>
+
+                </div>
+
+             </div>
+
+            </div>
+
+                
+                
+
+
+
+
+            
+        </div>
+    
+        
+
+
+
+
+    
+    
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
